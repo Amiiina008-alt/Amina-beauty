@@ -6,102 +6,111 @@
   <title>Amina Beauty</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #fff9f9;
+      font-family: 'Segoe UI', sans-serif;
       color: #333;
+      background-color: #fff;
     }
     header {
-      background-color: #f9b8c4;
-      padding: 20px;
+      background-color: #f6e7e8;
+      color: #3a3a3a;
       text-align: center;
+      padding: 30px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.1em;
+      margin-top: 8px;
+    }
+    nav {
+      background-color: #f4dcdc;
+      text-align: center;
+      padding: 12px;
     }
     nav a {
       color: #333;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
+      margin: 0 18px;
     }
     nav a:hover {
-      text-decoration: underline;
+      color: #a05050;
     }
-    .container {
-      padding: 30px;
+    section {
+      padding: 40px 15%;
       text-align: center;
     }
-    h1, h2 {
-      color: #e75480;
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 25px;
+      background-color: #a05050;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #7c3f3f;
+    }
+    .contact-info a {
+      color: #a05050;
+      text-decoration: none;
+      font-weight: 600;
     }
     footer {
-      background-color: #f9b8c4;
-      padding: 10px;
+      background-color: #f4dcdc;
       text-align: center;
-      font-size: 14px;
-    }
-    form {
-      max-width: 400px;
-      margin: 20px auto;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      background-color: #e75480;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #ff8ba0;
+      padding: 15px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Amina Beauty</h1>
-    <nav>
-      <a href="#home">Басты бет</a>
-      <a href="#about">Біз туралы</a>
-      <a href="#contact">Байланыс</a>
-    </nav>
+    <p>Табиғи күтім — шынайы сұлулық</p>
   </header>
 
-  <section id="home" class="container">
-    <h2>Басты бет</h2>
-    <p>Сұлулық пен табиғилық — біздің басты мақсатымыз. Amina Beauty табиғи күтім өнімдерін ұсынады.</p>
+  <nav>
+    <a href="#home">Басты бет</a>
+    <a href="#about">Біз туралы</a>
+    <a href="#contact">Байланыс</a>
+  </nav>
+
+  <section id="home">
+    <h2>Табиғи өнімдер жинағы</h2>
+    <p>Біз тек табиғи ингредиенттерден жасалған күтім өнімдерін ұсынамыз. 
+    Әр өнім теріңізге нәзік әсер береді және ұзақ мерзімді күтім сыйлайды.</p>
+    <a href="#about" class="btn">Каталогқа өту</a>
   </section>
 
-  <section id="about" class="container">
+  <section id="about" style="background-color:#fdf6f6;">
     <h2>Біз туралы</h2>
-    <p>Amina Beauty — тек табиғи ингредиенттерден жасалған өнімдерді ұсынатын бренд. Біз сіздің теріңізге қамқорлық жасаймыз.</p>
+    <p>Amina Beauty — табиғи тері күтімі мен шаш күтіміне арналған өнімдерді ұсынатын бренд. 
+    Біз құрамында сульфаттар мен зиянды қоспалар жоқ табиғи формулаларды қолданамыз.</p>
   </section>
 
-  <section id="contact" class="container">
+  <section id="contact">
     <h2>Байланыс</h2>
-    <form>
-      <label>Аты-жөніңіз:</label>
-      <input type="text" placeholder="Амина" required>
-      <label>Электрондық пошта:</label>
-      <input type="email" placeholder="amina@example.com" required>
-      <label>Хабарлама:</label>
-      <textarea placeholder="Сұрағыңызды жазыңыз..." required></textarea>
-      <button type="submit">Жіберу</button>
-    </form>
+    <p>Сұрақтарыңыз болса немесе тапсырыс бергіңіз келсе, бізге хабарласыңыз:</p>
+    <div class="contact-info">
+      <p>📞 Телефон: <a href="tel:+77477940884">+7 (747) 794-0884</a></p>
+      <p>💬 WhatsApp: <a href="https://wa.me/77477940884" target="_blank">Хабарласу</a></p>
+      <p>✉️ Email: <a href="mailto:amina.beauty@example.com">amina.beauty@example.com</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Amina Beauty. Барлық құқықтар қорғалған.</p>
+    <p>©️ 2025 Amina Beauty. Барлық құқықтар қорғалған.</p>
+    <p><a href="tel:+77477940884">+7 (747) 794-0884</a> | 
+       <a href="https://wa.me/77477940884" target="_blank">WhatsApp</a></p>
   </footer>
+
 </body>
 </html>
