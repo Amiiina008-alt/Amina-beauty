@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amina Beauty</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fff9f9;
+      color: #333;
+    }
+    header {
+      background-color: #f9b8c4;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 30px;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #e75480;
+    }
+    footer {
+      background-color: #f9b8c4;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #e75480;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff8ba0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Amina Beauty</h1>
+    <nav>
+      <a href="#home">Басты бет</a>
+      <a href="#about">Біз туралы</a>
+      <a href="#contact">Байланыс</a>
+    </nav>
+  </header>
+
+  <section id="home" class="container">
+    <h2>Басты бет</h2>
+    <p>Сұлулық пен табиғилық — біздің басты мақсатымыз. Amina Beauty табиғи күтім өнімдерін ұсынады.</p>
+  </section>
+
+  <section id="about" class="container">
+    <h2>Біз туралы</h2>
+    <p>Amina Beauty — тек табиғи ингредиенттерден жасалған өнімдерді ұсынатын бренд. Біз сіздің теріңізге қамқорлық жасаймыз.</p>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Байланыс</h2>
+    <form>
+      <label>Аты-жөніңіз:</label>
+      <input type="text" placeholder="Амина" required>
+      <label>Электрондық пошта:</label>
+      <input type="email" placeholder="amina@example.com" required>
+      <label>Хабарлама:</label>
+      <textarea placeholder="Сұрағыңызды жазыңыз..." required></textarea>
+      <button type="submit">Жіберу</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Amina Beauty. Барлық құқықтар қорғалған.</p>
+  </footer>
+</body>
+</html>
